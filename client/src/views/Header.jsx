@@ -70,14 +70,14 @@ export default function Header() {
       </div>
       <div
         className={`fixed inset-y-0 mt-11 bg-pastel w-[50%] md:w-auto transition-all duration-500 ease-in-out transform ${
-          isMenuOpen ? "translate-x-0" : "-translate-x-full"
+          isMenuOpen ? "translate-x-full" : "translate-x-[2000%]"
         }`}
         style={{ zIndex: 1000 }}
       >
-        <div className="h-screen w-full bg-[#202335] top-4 relative right-0 z-10 flex flex-col items-center justify-center gap-4">
+        <div className="h-[50%] w-full bg-[#202335] top-4 relative right-0 z-10 flex flex-col items-center justify-center gap-4">
           <ul className=" w-3/5 h-4/5 flex flex-col items-center justify-around">
             <li>
-              <a href="#home" onClick={closeMenu}>
+              <a href="#home" onClick={closeMenu} >
                 Inicio
               </a>
             </li>

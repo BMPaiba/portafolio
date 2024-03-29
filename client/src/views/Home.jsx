@@ -6,10 +6,10 @@ import { FaLinkedin } from "react-icons/fa";
 export default function Home() {
   const job = "<Full Stack Developer/>";
   return (
-    <div className="h-screen flex justify-start items-center sm:justify-around flex-col pt-10 sm:pt-28  " id="home">
+    <div className=" sm:h-screen flex justify-start items-center sm:justify-around flex-col pt-16 " id="home">
       <div className= " flex items-start justify-around w-full ">
         <div className="flex flex-col items-center sm:items-start justify-center">
-          <h1 className="font-serif xl:text-7xl text-5xl font-bold pt-10 text-center sm:text-star">Hola, soy Brian</h1>
+          <h1 className="font-serif xl:text-7xl text-5xl font-bold pt-10 text-center sm:text-start">Hola, soy Brian</h1>
           <h3 className="pt-6 xl:text-4xl text-3xl font-medium text-Green text-center sm:text-start">{job}</h3>
           <p className="pt-14 text-lg text-center sm:text-start" >
             Disfruto creando diseños web y convertirlos en realidad con código

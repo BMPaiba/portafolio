@@ -9,13 +9,15 @@ import Projects from "./views/Projects";
 function App() {
   return (
     <>
-      <Header />
-      <div className="w-[90%] md:w-[80%] max-w-[1240px] m-auto">
+      <div className="fixed inset-x-0 top-0 z-10">
+        <Header />
+      </div>
+      <div className="w-[90%] md:w-[80%] max-w-[1240px] m-auto ">
         <Home />
-        {/* <About />
+        <About />
         <Projects />
-        <Skills />
-        <Contact /> */}
+        {/* <Skills /> */}
+        {/* <Contact /> */}
       </div>
     </>
   );
