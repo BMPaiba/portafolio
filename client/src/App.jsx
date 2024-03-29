@@ -10,12 +10,12 @@ function App() {
   return (
     <>
       <Header />
-      <div className="w-[80%] max-w-[1240px] m-auto">
+      <div className="w-[90%] md:w-[80%] max-w-[1240px] m-auto">
         <Home />
-        <About />
+        {/* <About />
         <Projects />
         <Skills />
-        <Contact />
+        <Contact /> */}
       </div>
     </>
   );
