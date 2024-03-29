@@ -27,7 +27,7 @@ export default function Projects() {
               </div>
               <div>
                 <button>
-                  <FaPlayCircle className="text-2xl" />
+                  <FaPlayCircle className="text-2xl hover:text-Green hover:scale-110 transition-transform duration-300 ease-in-out transform" />
                 </button>
               </div>
             </div>
@@ -53,10 +53,10 @@ export default function Projects() {
               </div>
               <div className="flex gap-8">
                 <button>
-                  <FaGithub className="text-2xl" />
+                  <FaGithub className="text-2xl hover:text-Green hover:scale-110 transition-transform duration-300 ease-in-out transform" />
                 </button>
                 <button>
-                  <FaExternalLinkAlt className="text-2xl" />
+                  <FaExternalLinkAlt className="text-2xl hover:text-Green hover:scale-110 transition-transform duration-300 ease-in-out transform" />
                 </button>
               </div>
             </div>
@@ -82,10 +82,10 @@ export default function Projects() {
               </div>
               <div className="flex gap-8">
                 <button>
-                  <FaGithub className="text-2xl" />
+                  <FaGithub className="text-2xl hover:text-Green hover:scale-110 transition-transform duration-300 ease-in-out transform" />
                 </button>
                 <button>
-                  <FaExternalLinkAlt className="text-2xl" />
+                  <FaExternalLinkAlt className="text-2xl hover:text-Green hover:scale-110 transition-transform duration-300 ease-in-out transform" />
                 </button>
               </div>
             </div>
