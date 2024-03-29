@@ -18,11 +18,11 @@ export default function Contact() {
 
   return (
     <>
-      <div className="h-screen flex flex-col items-center justify-around  pt-16 w-full" id="contact" >
-        <div className="flex w-full  pl-28">
-          <h3 className="text-Green text-5xl font-semibold ">Contáctame</h3>
+      <div className="h-screen flex flex-col items-center justify-around pt-16 w-full  " id="contact" >
+        <div className="flex w-full items-center justify-center md:pl-28">
+          <h3 className="text-Green text-5xl font-semibold  ">Contáctame</h3>
         </div>
-        <div className=" flex items-center justify-around  w-full">
+        <div className=" flex items-center justify-around  w-full  flex-wrap">
           <div className="flex flex-col items-center gap-6 ">
             <img
               src={img}
@@ -42,7 +42,7 @@ export default function Contact() {
             </div>
           </div>
           <div>
-            <form class="w-96 px-6">
+            <form class="w-96 px-6 pt-8 md:p-0">
               <div class="relative z-0 w-full mb-5 group">
                 <input
                   type="text"
@@ -124,7 +124,7 @@ export default function Contact() {
           </div>
         </div>
         <div>
-        <p className="text-xs">© Brian Paiba. Todos los derechos reservados.</p>
+        <p className="text-xs pt-8 md:p-0">© Brian Paiba. Todos los derechos reservados.</p>
 
         </div>
       </div>

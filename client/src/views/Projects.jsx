@@ -33,7 +33,7 @@ export default function Projects() {
   return (
     <>
       <div
-        className="flex items-center flex-col justify-around h-screen pt-16"
+        className="min-h-screen flex items-center flex-col justify-around  pt-16"
         id="projects"
       >
         <div className=" flex  items-start justify-start pl-14 w-full">
