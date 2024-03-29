@@ -71,12 +71,12 @@ export default function Skills() {
         <div></div>
         <div
           id="skills"
-          className="h-screen flex flex-col items-start justify-around w-full  "
+          className=" md:h-screen flex flex-col items-center md:items-start justify-around w-full  "
         >
-          <div className=" flex  items-end justify-end pl-28  mt-16">
+          <div className=" flex  items-end justify-end md:pl-28  mt-16 pb-10 md:pb-0">
             <h3 className="text-5xl font-semibold text-Green ">Habilidades</h3>
           </div>
-          <div className=" flex w-full  justify-around">
+          <div className=" flex w-full  justify-around flex-wrap gap-8 md:flex-nowrap md:gap-0">
             <div className="">
               <h3 className="text-center  text-3xl ">Front</h3>
               <div className="grid grid-cols-3 gap-2">
@@ -106,7 +106,7 @@ export default function Skills() {
               </div>
             </div>
           </div>
-          <div className="flex w-full  justify-around">
+          <div className="flex w-full  justify-around flex-wrap gap-8 md:flex-nowrap md:gap-0">
             <div>
               <h3 className="text-center  text-3xl ">Soft</h3>
               <div className="grid grid-cols-3 gap-2">
