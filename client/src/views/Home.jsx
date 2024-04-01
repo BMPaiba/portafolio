@@ -2,8 +2,20 @@ import React from "react";
 import image from "../assets/inicio.png";
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
+import CV from "../assets/CV.pdf";
 
 export default function Home() {
+  const cvDownload = () => {
+    const link = document.createElement('a');
+    link.href = CV;
+    link.download = 'Brian Paiba';
+    link.click();
+  };
+  const linkedin  = "https://www.linkedin.com/in/brian-m-paiba"
+  const github = "https://github.com/BMPaiba"
+  const handleClick = (linkedInUrl) => {
+    window.open(linkedInUrl, '_blank');
+  };
   const job = "<Full Stack Developer/>";
   return (
     <div className=" sm:h-screen flex justify-start items-center sm:justify-around flex-col pt-16 " id="home">
@@ -21,9 +33,9 @@ export default function Home() {
         </div>
       </div>
       <div className="flex gap-8">
-        <button className="text-lg  hover:text-Green hover:scale-110 transition-transform duration-300 ease-in-out transform" >Descargar CV</button>
-        <button className="text-3xl hover:text-Green hover:scale-110 transition-transform duration-300 ease-in-out transform"><FaGithub/></button>
-        <button className="text-3xl hover:text-Green hover:scale-110 transition-transform duration-300 ease-in-out transform"><FaLinkedin/></button>
+        <button className="text-lg  hover:text-Green hover:scale-110 transition-transform duration-300 ease-in-out transform" onClick={cvDownload}>Descargar CV</button>
+        <button className="text-3xl hover:text-Green hover:scale-110 transition-transform duration-300 ease-in-out transform" onClick={() => handleClick(linkedin)}><FaGithub/></button>
+        <button className="text-3xl hover:text-Green hover:scale-110 transition-transform duration-300 ease-in-out transform" onClick={() => handleClick(linkedin)}><FaLinkedin/></button>
       </div>
     </div>
   );

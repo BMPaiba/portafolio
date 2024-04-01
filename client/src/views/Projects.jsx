@@ -13,22 +13,29 @@ export default function Projects() {
     image: charlie,
     description:
       "Desarrollé un marketplace de comercios con franquicias independientes, pagos por MercadoPago, inicio de sesión con Google/Facebook/Email, visualización de productos mediante QR,reembolsos de compras y seguridad en las transacciones. Mejoré habilidades de trabajo en equipo y planificación",
-    buttons: [<FaPlayCircle />],
+    links: [{ type: "demo", url: "https://www.youtube.com/watch?v=LbkMOQ-xVGk&feature=youtu.be", button: <FaPlayCircle /> }],
   };
   const bootcampProject = {
     name: "Bootcamp Project",
     image: countries,
     description:
       "Desarrollé un marketplace de comercios con franquicias independientes, pagos por MercadoPago, inicio de sesión con Google/Facebook/Email, visualización de productos mediante QR,reembolsos de compras y seguridad en las transacciones. Mejoré habilidades de trabajo en equipo y planificación",
-    buttons: [<FaGithub />, <FaExternalLinkAlt />],
+    links: [
+      { type: "github", url: "https://github.com/BMPaiba/PI-Countries-", button: <FaGithub /> },
+      { type: "deploy", url: "https://countries-wzre.onrender.com/", button: <FaExternalLinkAlt /> },
+    ],
   };
   const rickmortyProject = {
     name: "Rick & Morty App",
     image: rickmorty,
     description:
       "Desarrollé un marketplace de comercios con franquicias independientes, pagos por MercadoPago, inicio de sesión con Google/Facebook/Email, visualización de productos mediante QR,reembolsos de compras y seguridad en las transacciones. Mejoré habilidades de trabajo en equipo y planificación",
-    buttons: [<FaGithub />, <FaExternalLinkAlt />],
+    links: [
+      { type: "github", url: "https://github.com/BMPaiba/rick-and-morty-ft45a", button: <FaGithub /> },
+      { type: "deploy", url: "https://rickandmorty-i825.onrender.com/", button: <FaExternalLinkAlt /> },
+    ],
   };
+  
 
   return (
     <>
@@ -40,24 +47,9 @@ export default function Projects() {
           <h3 className="text-5xl font-semibold text-Green pb-10">Proyectos</h3>
         </div>
         <div className="md:flex flex-col gap-12">
-          <Project
-            name={charlieProject.name}
-            image={charlieProject.image}
-            description={charlieProject.description}
-            buttons={charlieProject.buttons}
-          />
-          <Project
-            name={bootcampProject.name}
-            image={bootcampProject.image}
-            description={bootcampProject.description}
-            buttons={bootcampProject.buttons}
-          />
-          <Project
-            name={rickmortyProject.name}
-            image={rickmortyProject.image}
-            description={rickmortyProject.description}
-            buttons={rickmortyProject.buttons}
-          />
+          <Project {...charlieProject} />
+          <Project {...bootcampProject} />
+          <Project {...rickmortyProject} />
         </div>
       </div>
     </>
