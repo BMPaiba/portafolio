@@ -13,29 +13,49 @@ export default function Projects() {
     image: charlie,
     description:
       "Desarrollé un marketplace de comercios con franquicias independientes, pagos por MercadoPago, inicio de sesión con Google/Facebook/Email, visualización de productos mediante QR,reembolsos de compras y seguridad en las transacciones. Mejoré habilidades de trabajo en equipo y planificación",
-    links: [{ type: "demo", url: "https://www.youtube.com/watch?v=LbkMOQ-xVGk&feature=youtu.be", button: <FaPlayCircle /> }],
+    links: [
+      {
+        type: "demo",
+        url: "https://www.youtube.com/watch?v=LbkMOQ-xVGk&feature=youtu.be",
+        button: <FaPlayCircle />,
+      },
+    ],
   };
   const bootcampProject = {
     name: "Bootcamp Project",
     image: countries,
     description:
-      "Desarrollé un marketplace de comercios con franquicias independientes, pagos por MercadoPago, inicio de sesión con Google/Facebook/Email, visualización de productos mediante QR,reembolsos de compras y seguridad en las transacciones. Mejoré habilidades de trabajo en equipo y planificación",
+      "Desarrollé una aplicación web que muestra datos de países y sus actividades turísticas, permitiendo la agregación de nuevas actividades. Implementé una Landing Page y un Home con tarjetas de países, botón de detalle y paginación, además de la vista detallada de países con información como población, continente y actividades turísticas. Utilicé tecnologías como HTML, CSS, JavaScript, React y Node.js para crear una interfaz intuitiva y funcional que mejora la experiencia del usuario y brinda información relevante sobre los países.",
     links: [
-      { type: "github", url: "https://github.com/BMPaiba/PI-Countries-", button: <FaGithub /> },
-      { type: "deploy", url: "https://countries-wzre.onrender.com/", button: <FaExternalLinkAlt /> },
+      {
+        type: "github",
+        url: "https://github.com/BMPaiba/PI-Countries-",
+        button: <FaGithub />,
+      },
+      {
+        type: "deploy",
+        url: "https://countries-wzre.onrender.com/",
+        button: <FaExternalLinkAlt />,
+      },
     ],
   };
   const rickmortyProject = {
     name: "Rick & Morty App",
     image: rickmorty,
-    description:
-      "Desarrollé un marketplace de comercios con franquicias independientes, pagos por MercadoPago, inicio de sesión con Google/Facebook/Email, visualización de productos mediante QR,reembolsos de compras y seguridad en las transacciones. Mejoré habilidades de trabajo en equipo y planificación",
+    description: `Desarrollé una aplicación web basada en la serie de televisión "Rick & Morty" que tenía como objetivo proporcionar información detallada sobre los personajes, episodios y ubicaciones de la serie. La aplicación utilizaba una API pública de "Rick & Morty" para obtener los datos necesarios y mostrarlos de manera interactiva y atractiva para los usuarios.`,
     links: [
-      { type: "github", url: "https://github.com/BMPaiba/rick-and-morty-ft45a", button: <FaGithub /> },
-      { type: "deploy", url: "https://rickandmorty-i825.onrender.com/", button: <FaExternalLinkAlt /> },
+      {
+        type: "github",
+        url: "https://github.com/BMPaiba/rick-and-morty-ft45a",
+        button: <FaGithub />,
+      },
+      {
+        type: "deploy",
+        url: "https://rickandmorty-i825.onrender.com/",
+        button: <FaExternalLinkAlt />,
+      },
     ],
   };
-  
 
   return (
     <>

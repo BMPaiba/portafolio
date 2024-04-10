@@ -34,7 +34,7 @@ export default function Home() {
       </div>
       <div className="flex gap-8">
         <button className="text-lg  hover:text-Green hover:scale-110 transition-transform duration-300 ease-in-out transform" onClick={cvDownload}>Descargar CV</button>
-        <button className="text-3xl hover:text-Green hover:scale-110 transition-transform duration-300 ease-in-out transform" onClick={() => handleClick(linkedin)}><FaGithub/></button>
+        <button className="text-3xl hover:text-Green hover:scale-110 transition-transform duration-300 ease-in-out transform" onClick={() => handleClick(github)}><FaGithub/></button>
         <button className="text-3xl hover:text-Green hover:scale-110 transition-transform duration-300 ease-in-out transform" onClick={() => handleClick(linkedin)}><FaLinkedin/></button>
       </div>
     </div>
